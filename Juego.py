@@ -19,7 +19,7 @@ fizq = False    # Bandera izquierda
 conteo = 0
 
 # Accedemos a la carpeta
-path = 'Imagenes'
+path = 'Imagene'
 images = []
 clases = []
 lista = os.listdir(path)

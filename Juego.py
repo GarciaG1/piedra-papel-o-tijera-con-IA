@@ -24,6 +24,7 @@ images = []
 clases = []
 lista = os.listdir(path)
 
+
 # Leemos los rostros del DB
 for lis in lista:
     # Leemos las imagenes de los rostros
@@ -37,9 +38,15 @@ print(clases)
 
 # Lectura de la camara
 cap = cv2.VideoCapture(0)
+cv2.namedWindow("JUEGO CON AI", cv2.WND_PROP_FULLSCREEN)
+cv2.setWindowProperty("JUEGO CON AI", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+
 
 # Declaramos el detector
 detector = sm.detectormanos(Confdeteccion=0.9)
+
+
+
 
 # Empezamos
 while True:
@@ -309,7 +316,7 @@ while True:
                             gan = images[8]
                             alig, anig, c = gan.shape
                             # Mostramos imagen
-                            frame[70: 70 + alig, 180: 180 + anig] = gan
+                            frame[313: 313 + alig, 180: 180 + anig] = gan
 
                             # Reset
                             if t == 82 or t == 114:

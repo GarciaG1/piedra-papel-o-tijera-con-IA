@@ -45,9 +45,6 @@ cv2.setWindowProperty("JUEGO CON AI", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSC
 # Declaramos el detector
 detector = sm.detectormanos(Confdeteccion=0.9)
 
-
-
-
 # Empezamos
 while True:
     # Lectura de la videocaptura
